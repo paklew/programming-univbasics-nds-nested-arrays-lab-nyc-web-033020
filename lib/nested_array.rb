@@ -17,11 +17,12 @@ CONVENTIONAL_PRODUCE = [
 ]
 Deli = []
 def assembled_matrix
-  Deli = [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
+  Deli.push(CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE)
 end
 
+SORTED_DELI = []
 def sorted_matrix
-  SORTED_DELI = [CONVENTIONAL_PRODUCE.sort!, ORGANIC_PRODUCE.sort!]
+  SORTED_DELI.push(CONVENTIONAL_PRODUCE.sort, ORGANIC_PRODUCE.sort)
   # Using Array literal syntax only, build another nested array that 
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
